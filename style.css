@@ -1,0 +1,262 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
+    margin-right: 20px;
+}
+
+header{
+    width: 105%;
+    height: 75px;
+    position: relative;
+    background-color:rgb(38, 38, 39);
+    padding-bottom: 50px;
+
+}
+
+body{
+    background-color:white;
+}
+
+#menu h1{
+    font-size:50px;
+    position:relative;
+    padding: 5px;
+    background-color:rgb(100, 191, 236) ;
+    color:rgb(38,38,39);
+    display: block;
+    margin-left: 20px;
+}
+
+.banner{
+    background-image:url(/images/milky\ way.jpg);
+    background-position:center;
+    width: 105%;
+    height:75px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-size:cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.banner h2{
+   display: flex;
+   justify-content: center;
+   position:absolute;
+   width:300px;
+   height:35px;
+   margin-right:100px;
+   background-color: rgb(100, 191, 236);
+   color: rgb(38,38,39);
+   padding: 20px;
+
+
+}
+#menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav{
+    display: block;
+}
+
+.navbar{
+    float: right;
+    margin-top: 65px;
+    justify-content:space-evenly;
+    padding-bottom: 30px;
+}
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar li{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar li a{
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(100, 191, 236);
+}
+
+#aboutme, #mywork, #contact {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    justify-content: flex-start;
+    width: 85%;
+    position: relative;
+}
+
+#aboutme img{
+    width:25%;
+    margin-left: 5px;
+    padding:25px;
+    float:left;
+}
+
+#aboutme p{
+    font-size: 28px;
+    position: relative;
+}
+
+.titles{
+    flex: 0 0 20%;
+    border-right: (24, 51, 64);
+    max-width: 20%;
+    padding-right: 50px;
+}
+
+.titles h2{
+    text-align: right;
+    margin-right: 50px;
+    font-size: 35px;
+    color: rgb(24, 51, 64));
+}
+
+.content{
+    flex: 0 0 75%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 30px;
+}
+
+.mywork{
+    display:flex;
+    position: relative;
+}
+
+.mywork img{
+  width: 100%;
+  position:relative;
+  margin:5px;
+  padding:5px;
+  background-color: rgb(100, 191, 236);
+  display: flex;
+  flex:0 0 75%
+
+}
+
+.mywork p{
+    display: flex;
+    flex: 0 0 75%;
+    position:absolute;
+    bottom: 2.5%;
+    left: 10px;
+    padding: 10px;
+    background-color: rgb(100, 191, 236);
+    color: rbg(38,38,39);
+    height: 50px;
+    width:75px;
+
+}
+
+.images{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.row{
+    width: 47%;
+    position: relative;
+}
+
+.row img{
+    display: flex;
+    flex: 0 0 75%;
+    justify-content: space-around;
+    width:100%;
+    margin:5px;
+    padding:5px;
+    position:relative;
+    background-color: rgb(100, 191, 236);
+}
+
+.row p{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    flex-direction: column;
+    bottom:10%;
+    left:10px;
+    padding:1%;
+    background-color: rgb(100, 191, 236);
+    color: rbg(38,38,39);
+    height: 40px;
+    width:75px;
+}
+
+
+#contact ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#contact ul li a{
+    padding-right: 30px;
+    padding-top: 30px;
+    text-decoration: underline;
+    color: rgb(38,38,39);
+    font-size:large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+}
+
+
+.row img:hover{
+    background-color:rgb(38, 38, 39);
+}
+
+.mywork img:hover{
+    background-color:rgb(38, 38, 39);
+}
+
+@media screen and (max-width: 915px) {
+    .navbar li {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 915px) {
+    .navbar {
+      margin-top: 45px;
+    }
+  }
+
+  @media screen and (max-width: 915px) {
+    header {
+      height:150px;
+      background-color: rgb(37, 14, 83);
+    }
+  }
+
+  @media screen and (max-width: 915px) {
+  .navbar li a, #menu h1{
+      color:white
+  }
+}
+
+@media screen and (max-width: 915px) {
+    #contact ul{
+        display:inline-block
+    }
+  }
+
+  @media screen and (max-width: 915px) {
+    .row{
+        width:100%
+    }
+  }
