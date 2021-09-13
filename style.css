@@ -5,8 +5,10 @@
 }
 
 header{
+    display: flex;
+    align-items:flex-start;
     width: 105%;
-    height: 75px;
+    height: 60px;
     position: relative;
     background-color:rgb(38, 38, 39);
     padding-bottom: 50px;
@@ -17,14 +19,15 @@ body{
     background-color:white;
 }
 
+
 #menu h1{
     font-size:50px;
     position:relative;
+    bottom:20px;
     padding: 5px;
     background-color:rgb(100, 191, 236) ;
     color:rgb(38,38,39);
     display: block;
-    margin-left: 20px;
 }
 
 .banner{
@@ -32,13 +35,13 @@ body{
     background-position:center;
     width: 105%;
     height:75px;
-    padding-bottom: 100px;
     padding-top: 100px;
     background-size:cover;
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+ 
 }
 .banner h2{
    display: flex;
@@ -46,7 +49,6 @@ body{
    position:absolute;
    width:300px;
    height:35px;
-   margin-right:100px;
    background-color: rgb(100, 191, 236);
    color: rgb(38,38,39);
    padding: 20px;
@@ -65,7 +67,7 @@ nav{
 
 .navbar{
     float: right;
-    margin-top: 65px;
+    margin-top: 55px;
     justify-content:space-evenly;
     padding-bottom: 30px;
 }
@@ -110,17 +112,24 @@ nav{
 
 .titles{
     flex: 0 0 20%;
-    border-right: (24, 51, 64);
     max-width: 20%;
     padding-right: 50px;
+    border-right-color: rgb(24, 51, 64);
+    border-left-color: white;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-style: solid;
+    border-width: 5px;
 }
+
 
 .titles h2{
     text-align: right;
     margin-right: 50px;
     font-size: 35px;
-    color: rgb(24, 51, 64));
+    color: rgb(24, 51, 64);
 }
+
 
 .content{
     flex: 0 0 75%;
@@ -141,13 +150,11 @@ nav{
   padding:5px;
   background-color: rgb(100, 191, 236);
   display: flex;
-  flex:0 0 75%
+
 
 }
 
 .mywork p{
-    display: flex;
-    flex: 0 0 75%;
     position:absolute;
     bottom: 2.5%;
     left: 10px;
@@ -173,7 +180,6 @@ nav{
 
 .row img{
     display: flex;
-    flex: 0 0 75%;
     justify-content: space-around;
     width:100%;
     margin:5px;
@@ -211,6 +217,7 @@ nav{
     text-decoration: underline;
     color: rgb(38,38,39);
     font-size:large;
+    font-weight: bolder;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline-block;
 }
@@ -224,7 +231,7 @@ nav{
     background-color:rgb(38, 38, 39);
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 1030px) {
     .navbar li {
       display: block;
     }
@@ -236,14 +243,23 @@ nav{
     }
   }
 
-  @media screen and (max-width: 915px) {
+  @media screen and (max-width: 1030px) {
     header {
       height:150px;
-      background-color: rgb(37, 14, 83);
+      background-color: rgb(22, 22, 59);
     }
   }
 
-  @media screen and (max-width: 915px) {
+  @media screen and (max-width: 1030px) {
+   #menu h1 {
+    bottom:5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    }
+
+
+  @media screen and (max-width: 1030px) {
   .navbar li a, #menu h1{
       color:white
   }
@@ -255,7 +271,7 @@ nav{
     }
   }
 
-  @media screen and (max-width: 915px) {
+  @media screen and (max-width: 1160px) {
     .row{
         width:100%
     }
