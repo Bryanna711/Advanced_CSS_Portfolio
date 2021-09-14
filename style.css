@@ -30,31 +30,6 @@ body{
     display: block;
 }
 
-.banner{
-    background-image:url(/images/milky\ way.jpg);
-    background-position:center;
-    width: 105%;
-    height:75px;
-    padding-top: 100px;
-    background-size:cover;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
- 
-}
-.banner h2{
-   display: flex;
-   justify-content: center;
-   position:absolute;
-   width:300px;
-   height:35px;
-   background-color: rgb(100, 191, 236);
-   color: rgb(38,38,39);
-   padding: 20px;
-
-
-}
 #menu{
     display: flex;
     width: 100%;
@@ -87,6 +62,30 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: rgb(100, 191, 236);
+}
+
+.banner{
+    background-image:url(/images/milky\ way.jpg);
+    background-position:center;
+    width: 105%;
+    height:75px;
+    padding-top: 100px;
+    background-size:cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+ 
+}
+.banner h2{
+   display: flex;
+   justify-content: center;
+   position:absolute;
+   width:300px;
+   height:35px;
+   background-color: rgb(100, 191, 236);
+   color: rgb(38,38,39);
+   padding: 20px;
 }
 
 #aboutme, #mywork, #contact {
@@ -130,80 +129,94 @@ nav{
     color: rgb(24, 51, 64);
 }
 
-
 .content{
-    flex: 0 0 75%;
+    flex: 3 3 75%;
     display: flex;
-    flex-flow: row wrap;
-    padding-left: 30px;
-}
-
-.mywork{
-    display:flex;
-    position: relative;
-}
-
-.mywork img{
-  width: 100%;
-  position:relative;
-  margin:5px;
-  padding:5px;
-  background-color: rgb(100, 191, 236);
-  display: flex;
-
-
-}
-
-.mywork p{
-    position:absolute;
-    bottom: 2.5%;
-    left: 10px;
-    padding: 10px;
-    background-color: rgb(100, 191, 236);
-    color: rbg(38,38,39);
-    height: 50px;
-    width:75px;
-
-}
-
-.images{
-    display:flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-
-}
-.row{
-    width: 47%;
-    position: relative;
 }
 
-.row img{
-    display: flex;
-    justify-content: space-around;
-    width:100%;
+
+#work{
+    background-image:url(./images/bry\ top\ of\ the\ world\ 1.jpg);
+    background-position:center;
+    background-size:cover;
+}
+#horiseon{
+    background-image:url(./images/blue\ office.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+#bigfoot{
+    background-image:url(/images/elephant.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+#frozen{
+    background-image:url(/images/igloo.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+#girls{
+    background-image:url(./images/shaking\ hands.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+.bigcard{
     margin:5px;
-    padding:5px;
-    position:relative;
-    background-color: rgb(100, 191, 236);
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex:1 1 100%;
+    border:rgb(100, 191, 236);
+    border-style: solid;
+    border-width: 4px;
 }
 
-.row p{
+.card{
+    margin:5px;
+    position: relative;
+    height: 250px;
+    width:50%;
     display: flex;
+    flex:1 1 40%;
+    border:rgb(100, 191, 236);
+    border-style: solid;
+    border-width: 4px;
+}
+
+
+.links{
     position:absolute;
-    justify-content: center;
-    flex-direction: column;
-    bottom:10%;
-    left:10px;
-    padding:1%;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    
+}
+
+.titlecard{
+    position:absolute;
+    bottom:20px;
+    width:auto;
+    height:250px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.titlecard h2{
+    padding:3px;
     background-color: rgb(100, 191, 236);
-    color: rbg(38,38,39);
-    height: 40px;
-    width:75px;
+    color: rgb(38,38,39);
 }
 
 
 #contact ul{
+    position:relative;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -220,15 +233,16 @@ nav{
     font-weight: bolder;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline-block;
+    position:relative;
 }
 
 
-.row img:hover{
-    background-color:rgb(38, 38, 39);
+.card:hover{
+    border-color: rgb(38, 38, 39);
 }
 
-.mywork img:hover{
-    background-color:rgb(38, 38, 39);
+.bigcard:hover{
+    border-color:rgb(38, 38, 39);
 }
 
 @media screen and (max-width: 1030px) {
@@ -237,7 +251,7 @@ nav{
     }
   }
 
-  @media screen and (max-width: 915px) {
+  @media screen and (max-width: 1030px) {
     .navbar {
       margin-top: 45px;
     }
@@ -265,14 +279,16 @@ nav{
   }
 }
 
-@media screen and (max-width: 915px) {
-    #contact ul{
-        display:inline-block
+  @media screen and (max-width: 1030px) {
+    #mywork .content{
+        flex-direction: column;
+        height: 1500px;
+        flex-wrap: nowrap;
     }
   }
 
-  @media screen and (max-width: 1160px) {
-    .row{
-        width:100%
+  @media screen and (max-width: 1030px) {
+    .card{
+        width:100%;
     }
   }
