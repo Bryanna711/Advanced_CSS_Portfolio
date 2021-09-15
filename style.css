@@ -65,7 +65,7 @@ nav{
 }
 
 .banner{
-    background-image:url(../images/milky\ way.jpg);
+    background-image:url(./images/milky\ way.jpg);
     background-position:center;
     width: 105%;
     height:75px;
@@ -149,13 +149,13 @@ nav{
 }
 
 #bigfoot{
-    background-image:url(../images/elephant2.jpg);
+    background-image:url(./images/elephant2.jpg);
     background-position:center;
     background-size:cover;
 }
 
 #frozen{
-    background-image:url(../images/igloo.jpg);
+    background-image:url(./images/igloo.jpg);
     background-position:center;
     background-size:cover;
 }
