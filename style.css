@@ -1,4 +1,62 @@
 *{
+    font-family: 'Special Elite', cursive;
+    background-color: rgb(10, 65, 46)
+;
+}
+
+.list-group-item{
+    background-color: rgb(10, 65, 46);
+    color:white
+}
+.card-body{
+    background-color: rgb(93, 202, 164);
+}
+
+.card-text{
+    color:rgb(83, 1, 1);
+    background-color: rgb(93, 202, 164);
+}
+
+.card-title{
+    color:rgb(109, 5, 5);
+    background-color:rgb(93, 202, 164);
+}
+.navbar{
+    background-color: rgb(93, 202, 164);
+}
+
+.nav{
+    background-color: rgb(93, 202, 164);
+}
+
+.nav-link{
+    background-color: rgb(93, 202, 164);
+    color:rgb(83, 1, 1)
+}
+
+.card-text .text-reset{
+    background-color: rgb(93, 202, 164);
+}
+
+.mt-4{
+    background-color: rgb(109, 5, 5);
+}
+h1{
+    background-color: rgb(109, 5, 5);
+}
+
+.mt-4 p{
+    background-color: rgb(109, 5, 5);
+}
+
+h2{
+    font-size: 40px;
+}
+
+
+
+
+ /* *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     scroll-behavior: smooth;
     margin-right: 20px;
@@ -96,7 +154,7 @@ nav{
     width: 85%;
     position: relative;
 }
-
+/* 
 #aboutme img{
     width:25%;
     margin-left: 5px;
@@ -134,11 +192,11 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+} */
 
 
-#work{
-    background-image:url(./images/bry\ top\ of\ the\ world\ 1.jpg);
+/* #work{
+    background-image:url(./images/perfect\ pet\ placer.png);
     background-position:center;
     background-size:cover;
 }
@@ -164,9 +222,9 @@ nav{
     background-image:url(./images/shaking\ hands.jpg);
     background-position:center;
     background-size:cover;
-}
+} */
 
-.bigcard{
+/* .bigcard{
     margin:5px;
     position: relative;
     width: 100%;
@@ -188,9 +246,9 @@ nav{
     border:rgb(100, 191, 236);
     border-style: solid;
     border-width: 4px;
-}
+} */
 
-
+/* 
 .links{
     position:absolute;
     width:100%;
@@ -212,10 +270,10 @@ nav{
     padding:3px;
     background-color: rgb(100, 191, 236);
     color: rgb(38,38,39);
-}
+} */
 
 
-#contact ul{
+/* #contact ul{
     position:relative;
     list-style-type: none;
     display: flex;
@@ -291,4 +349,5 @@ nav{
     .card{
         width:100%;
     }
-  }
+  } */ 
+
